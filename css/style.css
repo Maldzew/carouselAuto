@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,#708090 50%,#fa8072 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 1000px;
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.nav {
+    display: block;
+    width: 100%;
+    height: 70px;
+}
+
+.items {
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.nav-item {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-item:nth-of-type(5) {
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 12px 20px;
+}
+
+.content-box {
+    width: 100%;
+    margin-top: 60px;
+    display: flex; 
+}
+
+.content {
+    width: 50%;
+}
+
+.title {
+    color: #FA8072;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 25px;
+}
+
+.description {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 20px;
+    width: 350px;
+    line-height: 40px;
+    margin-left: 25px;
+}
+
+.blur {
+    background-color: gold;
+    color: white;
+}
+
+.items-link {
+    display: inline-flex;
+    width: 220px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.item {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin-left: 7px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.item:nth-of-type(2) {
+    background-color: black;
+}
+
+.item:nth-of-type(3) {
+    background-color: rgb(15, 15, 107);
+}
+
+.item:nth-of-type(4) {
+    background-color: rgb(1, 78, 1);
+}
+
+.sub-description {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #bbb;
+    margin: 70px 0 0 25px;
+}
+
+.content-img {
+    width: 50%;
+    right: 1px;
+    display: inline-block;
+}
+
+#img {
+    width: 140%;
+    margin-top: -120px;
+    margin-left: -100px;
+    animation: animat .5s linear;
+    object-fit: cover;
+}
+
+@keyframes animat {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
